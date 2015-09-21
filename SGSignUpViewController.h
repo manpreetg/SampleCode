@@ -11,6 +11,7 @@
 
 
 @interface RegisterScreen : UIViewController<UITextFieldDelegate,UIAlertViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *lastnameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *emailAddressTextField;
@@ -21,4 +22,5 @@
 - (IBAction)createAccountAction:(id)sender;
 - (IBAction)logInNowAction:(id)sender;
 @property (nonatomic) BOOL isComingFromLoginScreen;
+
 @end
